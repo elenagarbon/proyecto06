@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- si no ponemos SRC es que vamos a escribir el javascript aqui -->
+<script type="text/javascript">
+	function guardarlocal() {
+		console.log("Guardando en local");
+		localStorage
+
+		.setItem('Nombre', document.getElementById('mensaje').value); //name es para guardar nombre: elena. Apellido garcia//
+
+	}
+
+	function guardarsesion() {
+		console.log("Guardando en sesion");
+		sesionStorage.setItem('Apellido',
+				document.getElementById('mensaje').value);
+
+	}
+</script>
+
+
+</head>
+
+<body>
+
+	<h2>Web Storage</h2>
+
+	<input type="text" id="mensaje" name="mensaje">
+
+	<input type="button" value="guardar local" onclick="guardarlocal()">
+
+	<input type="button" value="guardar sesion" onclick="guardarsesion()">
+
+
+
+</body>
+</html>
